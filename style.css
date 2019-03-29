@@ -1,0 +1,151 @@
+html, body, h3 {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+header {
+	padding: 2em;
+	text-align: center;
+}
+header, aside {
+	background-color: #47a2ff;
+}
+h1, h3 {
+	font-family: Roboto;
+}
+h1, .lijntje {
+	color: black;
+}
+section {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding-bottom: .2em;
+}
+.mop {
+	background-color: #007fff;
+	color: white;
+	font-size: 3em;
+	width: 1.2em;
+	text-align: right;
+	padding: .2em;
+}
+article {
+	padding: 1em;
+}
+section img {
+	max-width: 100%;
+}
+aside ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+aside h3 {
+	background-color: #47a2ff;
+	padding: 2em;
+	color: #ffffff;
+}
+aside a {
+	text-decoration: none;
+	padding: 2em;
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+.validatie {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	background-color: none;
+}
+.hehexd:hover {
+	color: red;
+}
+aside a:hover {
+	background-color: #333;
+	color: #47a2ff;
+}
+footer {
+	background-color: #47a2ff;
+	color: #ffffff;
+	padding: 2em;
+}
+@media screen and (min-width: 760px) {
+	.afb {
+		display: block;
+		background-size: cover;
+		background-position: center center;
+	}
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "kop kop" "m1 m2" "m3 m4" "m3 m5" "afb m6" "afb m7" "m8 aside" "m9 aside" "m10 aside" "voet voet";
+	}
+	header {
+		grid-area: kop;
+	}
+	.mop1 {
+		grid-area: m1;
+	}
+	.mop2 {
+		grid-area: m2;
+	}
+	.mop3 {
+		grid-area: m3;
+	}
+	.mop4 {
+		grid-area: m4;
+	}
+	.mop5 {
+		grid-area: m5;
+	}
+	.mop5 {
+		grid-area: afb;
+	}
+	.mop6 {
+		grid-area: m6;
+	}
+	.mop7 {
+		grid-area: m7;
+	}
+	.mop8 {
+		grid-area: m8;
+	}
+	.mop9 {
+		grid-area: m9;
+	}
+	.mop10 {
+		grid-area: m10;
+	}
+	aside {
+		grid-area: aside;
+	}
+	footer {
+		grid-area: voet
+	}
+	footer {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+}
+@media screen and (min-width: 1000px) {
+	body {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "kop kop kop" "m1 m2 afb" "m3 m4 afb" "m3 m5 afb" "aside m6 m6" "aside m7 m8" "aside m9 m10" "aside voet voet";
+	}
+}
+@media screen and (min-width: 1450px) {
+	.afb2 {
+		display: block;
+		background-image: url('https://www.girlscene.nl/thumb/199x170/ckfinder/userfiles/images/Editor%27s%20Choice/2014/oktober/Schermafbeelding%202014-10-20%20om%2011_49_25.png');
+		background-size: cover;
+		background-position: center center;
+	}
+	body {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "kop kop kop kop kop" "m1 m1 afb m2 afb2" "m3 m4 afb m2 afb2" "m3 m4 afb m5 m5" "aside m6 m6 m7 m10" "aside m9 m8 m7 m10" "aside voet voet voet voet";
+	}
+	.afb2 {
+		grid-area: afb2;
+	}
+}
